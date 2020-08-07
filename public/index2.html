@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Checkout example · Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./img/img1.jpg" alt="" width="80" height="80">
+            <h2>ใบสั่งเจ้าพนักงานจราจรหรือเจ้าหน้าที่</h2>
+            <p class="lead">Traffic Ticket issued by divaffic Officers or Competent Officials</p>
+        </div>
+
+
+    </div>
+    <div class="col-md-8 order-md-1">
+        <h4 style="font-size: 18px;" class="mb-1">เลขที่ใบสั่ง</h4>
+        <h6 class="lead" id="divaffic">divaffic Ticket No.<input class="form-control" type="number"></h6>
+
+        <div class="mb-3">
+            <label style="font-size: 18px;">ด้วยผู้ขับขี่</label>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="radio" name="drive" required /> รถจักรยานยนต์ </div>
+                <div class="col-md-3">
+                    <input type="radio" name="drive" required /> รถยนต์นั่งส่วนบุคคล</div>
+                <div class="col-md-3">
+                    <input type="radio" name="drive" required /> รถประเภทอื่น</div>
+                <div class="col-md-3">
+                    <input type="radio" name="drive" required /> รถขนส่ง</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" id="car">Motorcycle </div>
+                <div class="col-md-3" id="car">Private Car</div>
+                <div class="col-md-3" id="car">Odiver Vehicle</div>
+                <div class="col-md-3" id="car">divuck</div>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div style="font-size: 18px;" class="col-md-6 mb-3">
+                        <p></p>
+                        <label for="firstName">ชื่อ</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="ชื่อ" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p></p>
+                        <label style="font-size: 18px;" for="lastName">นามสกุล</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="นามสกุล" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label style="font-size: 18px;" for="country">เพศ</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">เลือก</option>
+                            <option>ชาย</option>
+                            <option>หญิง</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label style="font-size: 18px;" for="zip">อายุ</label>
+                        <input type="text" class="form-control" id="zip" placeholder="อายุ" required>
+                        <div class="invalid-feedback">
+                            Zip code required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label style="font-size: 18px;" for="firstName">หมายเลขทะเบียนรถ</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="หมายเลขทะเบียนรถ" value=""
+                            required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label style="font-size: 18px;" for="lastName">ยี่ห้อ</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="ยี่ห้อ" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label style="font-size: 18px;" for="country">การกระทำผิด</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">เลือก</option>
+                            <option>ฝ่าฝืนสัญญาณจราจรสีแดง</option>
+                            <option>ฝ่าฝืนเครื่องหมายบนพื้นทาง</option>
+                            <option>ฝ่าฝืนเครื่องหมายจราจร</option>
+                            <option>ขับรถกีดขวางทางจราจร</option>
+                            <option>แซงเมื่อเข้าที่คับขัน</option>
+                            <option>จอดรถกีดขวางทางจราจร</option>
+                            <option>จอดรถในเขตห้ามหยุด</option>
+                            <option>รอสัญญาณล้ำแนว</option>
+                            <option>จอดรถบนทางเท้า</option>
+                        </select>
+
+                        <div class="mb-3">
+                            <label style="font-size: 18px;" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label style="font-size: 18px;" for="address">เหตุเกิดที่</label>
+                            <input type="text" class="form-control" id="address" placeholder="เหตุเกิดที่" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label style="font-size: 18px;" for="address2">ที่อยู่ผู้ขับขี่</label>
+                            <input type="text" class="form-control" id="address2" placeholder="ที่อยู่">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label style="font-size: 18px;" for="firstName">วันที่เกิดเหตุ</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="วันที่/เดือน/พ.ศ."
+                                    value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label style="font-size: 18px;" for="lastName">เวลาที่เกิดเหตุ</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="เวลาที่เกิดเหตุ"
+                                    value="" required>
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4 class="mb-3">ช่องทางการชำระเงิน</h4>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    checked required>
+                                <label class="custom-control-label" for="credit">ธนาคารกสิกรไทย</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                    required>
+                                <label class="custom-control-label" for="debit">ธนาคารกรุงไทย</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input"
+                                    required>
+                                <label class="custom-control-label" for="paypal">ธนาคารไทยพานิชย์</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">ชื่อบัญชี</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">เลขที่บัญชี</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+
+</html>
